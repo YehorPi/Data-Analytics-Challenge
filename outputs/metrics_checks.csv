@@ -1,0 +1,8 @@
+check,passed
+session_facts has one row per session,True
+daily tracked_sessions adds up to all sessions,True
+daily eligible_sessions adds up to eligible sessions,True
+channel breakdown adds up to eligible sessions,True
+email-click sessions can't exceed eligible sessions,True
+every session has page_views >= 1,True
+181 days present (1 Sep 2025 - 28 Feb 2026),True

@@ -1,0 +1,4 @@
+device_category,eligible_sessions,apply_click_sessions,email_click_sessions,email_click_rate
+mobile,10504,1365,522,0.0497
+desktop,8164,1744,839,0.1028
+tablet,730,98,35,0.0479

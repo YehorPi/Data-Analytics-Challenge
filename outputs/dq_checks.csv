@@ -1,0 +1,13 @@
+check,result,detail
+sessions: session_id unique,PASS,
+events: event_id unique,PASS,
+events: no orphan session_id,PASS,
+sessions: all timestamps valid and inside 2025-09-01..2026-02-28,PASS,
+sessions: device_category valid,PASS,
+sessions: every landing page maps to the catalogue,PASS,unmapped=0
+events: every page maps to the catalogue,PASS,unmapped=0
+events: engagement_seconds non-negative (nulls allowed),PASS,
+events: non-page_view events have 0 engagement,PASS,
+sessions: every session has >= 1 page_view,PASS,
+reconciliation: raw sessions - removed = clean sessions,PASS,20778 - 30 = 20748
+reconciliation: raw events - removed = clean events,PASS,45498 - 132 = 45366

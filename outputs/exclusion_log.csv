@@ -1,0 +1,14 @@
+table,action,reason,rows_or_values
+sessions,removed rows,exact duplicate row,30
+sessions,values changed,device_category trimmed/lower-cased,60
+sessions,values changed,device_category not in valid set -> unknown,0
+sessions,removed rows,unparseable session_start_utc,0
+sessions,values changed,blank source -> 'Unknown',45
+sessions,values changed,blank medium -> 'Unknown',45
+sessions,values changed,blank country_code -> 'Unknown',90
+sessions,flagged only,suspected automated traffic (source in SUSPECT_SOURCES),1350
+events,removed rows,exact duplicate row,120
+events,removed rows,event_name not in the 4 documented types,0
+events,removed rows,orphan: session_id not in cleaned sessions,12
+events,values changed,"unparseable event_timestamp_utc -> null, flagged",8
+events,values changed,negative engagement_seconds -> null,10
